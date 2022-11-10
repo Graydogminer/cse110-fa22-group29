@@ -7,7 +7,7 @@
     "fix-style": "eslint --fix **/*.js"
   },
     "html": {
-    "lintHTML": "htmlhint '**/*.html'",
+    "lintHTML": "npx htmlhint '**/*.html'",
   },
   "devDependencies": {
     "eslint": "^8.27.0",
