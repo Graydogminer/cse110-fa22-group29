@@ -16,10 +16,10 @@ jobs:
       - name: Install apt updates
         run: sudo apt -y update; sudo apt -y upgrade;
       - name: Install prerequisites
-        run: sudo apt install -y nodejs npm;
+        run: sudo apt install -y htmlhint npm;
       - name: Checkout
         uses: actions/checkout@v3
       - name: Install dependencies
         run: sudo npm install
       - name: Run tests
-        run: sudo npm run lint
+        run: sudo npm run lintHTML
